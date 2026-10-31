@@ -1,0 +1,20 @@
+name = "cranebrain"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[build]
+command = "node scripts/build.mjs"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cranebrain"
+database_id = "13d2de4e-ce33-4689-b9ba-0ca52e2b6be7"
+
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "cranebrain"
+
+# Set in the dashboard or with `wrangler secret put`:
+# TEAM_DOMAIN     your Cloudflare Access team domain (e.g. xxx.cloudflareaccess.com)
+# POLICY_AUD      the Access application's AUD tag
+# ALLOWED_EMAILS  optional comma-separated allow-list
